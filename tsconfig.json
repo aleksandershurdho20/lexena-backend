@@ -1,12 +1,11 @@
 {
   "compilerOptions": {
-    "baseUrl": "./src", 
+    "baseUrl": "./src",
     "paths": {
       "@/*": ["./*"],
       "@src/*": ["./*"],
       "@utils/*": ["utils/*"],
       "@database/*": ["database/*"]
-
     },
     "target": "ES6",
     "module": "commonjs",

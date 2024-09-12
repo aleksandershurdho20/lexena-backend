@@ -1,19 +1,24 @@
-
-import { Response } from 'express';
+import { Response } from "express";
 
 export class ApiResponse<T> {
   constructor(
     public success: boolean,
     public message: string,
     public data?: T,
-    public errorCode?: number
+    public errorCode?: number,
   ) {}
 
   static handleError(res: Response, error: any) {
     if (error instanceof ApiError) {
-      res.status(error.errorCode).json(new ApiResponse(false, error.message, undefined, error.errorCode));
+      res
+        .status(error.errorCode)
+        .json(
+          new ApiResponse(false, error.message, undefined, error.errorCode),
+        );
     } else {
-      res.status(500).json(new ApiResponse(false, 'An unexpected error occurred'));
+      res
+        .status(500)
+        .json(new ApiResponse(false, "An unexpected error occurred"));
     }
   }
 }

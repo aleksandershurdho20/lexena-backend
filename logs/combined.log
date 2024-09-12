@@ -108,3 +108,8 @@
 {"level":"info","message":"Server is running on http://localhost:3000","service":"user-service","timestamp":"2024-09-11 23:37:07"}
 {"level":"info","message":"Server is running on http://localhost:3000","service":"user-service","timestamp":"2024-09-11 23:41:07"}
 {"level":"info","message":"Server is running on http://localhost:3000","service":"user-service","timestamp":"2024-09-11 23:41:43"}
+{"level":"info","message":"Server is running on http://localhost:3000","service":"user-service","timestamp":"2024-09-11 23:42:17"}
+{"level":"info","message":"Server is running on http://localhost:3000","service":"user-service","timestamp":"2024-09-12 17:32:11"}
+{"level":"info","message":"Server is running on http://localhost:3000","service":"user-service","timestamp":"2024-09-12 17:33:33"}
+{"level":"info","message":"Server is running on http://localhost:3000","service":"user-service","timestamp":"2024-09-12 17:35:38"}
+{"level":"info","message":"Server is running on http://localhost:3000","service":"user-service","timestamp":"2024-09-12 17:35:56"}

@@ -7,9 +7,11 @@
     "start": "node dist/server.js",
     "build": "tsc",
     "dev": "nodemon --exec ts-node -r tsconfig-paths/register src/server.ts",
-    "migrate:up": "knex migrate:latest --knexfile knexfile.ts",
-    "migrate:down": "knex migrate:rollback --knexfile knexfile.ts",
-    "migrate:create": "knex migrate:make --knexfile knexfile.ts"
+    "migrate:up": "knex migrate:latest --knexfile src/config/knexfile.ts",
+    "migrate:down": "knex migrate:rollback --knexfile src/config/knexfile.ts",
+    "migrate:create": "knex migrate:make --knexfile src/config/knexfile.ts",
+    "format": "pretty-quick",
+    "format:all": "prettier --write **"
   },
   "keywords": [],
   "author": "",
@@ -23,6 +25,8 @@
     "jsonwebtoken": "^9.0.2",
     "knex": "^3.1.0",
     "pg": "^8.12.0",
+    "prettier": "^3.3.3",
+    "pretty-quick": "^4.0.0",
     "winston": "^3.14.2"
   },
   "devDependencies": {
