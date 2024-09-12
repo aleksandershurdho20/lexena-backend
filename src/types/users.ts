@@ -23,3 +23,9 @@ export interface UserRegisterRequest {
   phone: number;
   role: Role;
 }
+
+export interface UserActivationRequest {
+  id: number;
+  password: string;
+  status: string;
+}

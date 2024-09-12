@@ -5,12 +5,13 @@ export async function up(knex: Knex): Promise<void> {
     table.increments("id").primary();
     table.string("name").notNullable();
     table.string("lastname").notNullable();
-    table.string("email").unique().notNullable();
+    table.string("email").notNullable();
     table.integer("phone").notNullable();
     table.string("password");
     table
       .enum("role", ["admin", "nurse", "head_nurse", "receptionist"])
       .notNullable();
+    table.enum("status", ["active", "pending", "blocked"]);
     table.timestamps(true, true);
   });
 }
