@@ -8,5 +8,8 @@ router.post("/api/users", (req, res) => userController.createUser(req, res));
 router.get("/users", (req, res) => userController.getUsers(req, res));
 router.put("/users/:id", (req, res) => userController.updateUser(req, res));
 router.delete("/users/:id", (req, res) => userController.deleteUser(req, res));
+router.post("/users/activate-user", (req, res) =>
+  userController.activateUser(req, res),
+);
 
 export default router;

@@ -153,3 +153,35 @@
 {"level":"info","message":"Server is running on http://localhost:3000","service":"user-service","timestamp":"2024-09-12 21:34:44"}
 {"level":"info","message":"Server is running on http://localhost:3000","service":"user-service","timestamp":"2024-09-12 21:35:33"}
 {"level":"info","message":"Server is running on http://localhost:3000","service":"user-service","timestamp":"2024-09-12 21:38:49"}
+{"level":"info","message":"Server is running on http://localhost:3000","service":"user-service","timestamp":"2024-09-12 21:42:15"}
+{"level":"info","message":"Server is running on http://localhost:3000","service":"user-service","timestamp":"2024-09-13 11:12:57"}
+{"level":"info","message":"Server is running on http://localhost:3000","service":"user-service","timestamp":"2024-09-13 11:36:59"}
+{"level":"info","message":"Server is running on http://localhost:3000","service":"user-service","timestamp":"2024-09-13 11:37:51"}
+{"level":"info","message":"Server is running on http://localhost:3000","service":"user-service","timestamp":"2024-09-13 11:47:11"}
+{"level":"info","message":"Server is running on http://localhost:3000","service":"user-service","timestamp":"2024-09-13 11:47:29"}
+{"level":"info","message":"Server is running on http://localhost:3000","service":"user-service","timestamp":"2024-09-13 11:47:50"}
+{"level":"info","message":"Server is running on http://localhost:3000","service":"user-service","timestamp":"2024-09-13 11:49:20"}
+{"level":"info","message":"Server is running on http://localhost:3000","service":"user-service","timestamp":"2024-09-13 11:51:11"}
+{"level":"info","message":"Server is running on http://localhost:3000","service":"user-service","timestamp":"2024-09-13 12:02:45"}
+{"level":"info","message":"Server is running on http://localhost:3000","service":"user-service","timestamp":"2024-09-13 12:04:38"}
+{"level":"info","message":"Server is running on http://localhost:3000","service":"user-service","timestamp":"2024-09-13 16:41:26"}
+{"level":"info","message":"Server is running on http://localhost:3000","service":"user-service","timestamp":"2024-09-13 16:43:23"}
+{"level":"info","message":"Server is running on http://localhost:3000","service":"user-service","timestamp":"2024-09-13 16:51:01"}
+{"level":"info","message":"Server is running on http://localhost:3000","service":"user-service","timestamp":"2024-09-13 16:52:25"}
+{"level":"info","message":"Server is running on http://localhost:3000","service":"user-service","timestamp":"2024-09-13 16:54:30"}
+{"level":"info","message":"Server is running on http://localhost:3000","service":"user-service","timestamp":"2024-09-13 17:33:44"}
+{"level":"info","message":"Server is running on http://localhost:3000","service":"user-service","timestamp":"2024-09-13 17:38:58"}
+{"level":"info","message":"Server is running on http://localhost:3000","service":"user-service","timestamp":"2024-09-13 17:41:03"}
+{"level":"info","message":"User 11 is trying to activate","service":"user-service","timestamp":"2024-09-13 17:42:38"}
+{"level":"info","message":"User 11 activated succesfully","service":"user-service","timestamp":"2024-09-13 17:42:39"}
+{"level":"info","message":"Server is running on http://localhost:3000","service":"user-service","timestamp":"2024-09-13 17:44:26"}
+{"level":"info","message":"User 11 is trying to activate","service":"user-service","timestamp":"2024-09-13 17:44:30"}
+{"level":"info","message":"User 11 activated succesfully","service":"user-service","timestamp":"2024-09-13 17:44:31"}
+{"level":"info","message":"Server is running on http://localhost:3000","service":"user-service","timestamp":"2024-09-13 17:51:26"}
+{"level":"info","message":"Server is running on http://localhost:3000","service":"user-service","timestamp":"2024-09-13 17:52:00"}
+{"level":"info","message":"User 11 is trying to activate","service":"user-service","timestamp":"2024-09-13 17:52:04"}
+{"level":"info","message":"User 11 activated succesfully","service":"user-service","timestamp":"2024-09-13 17:52:04"}
+{"level":"info","message":"Server is running on http://localhost:3000","service":"user-service","timestamp":"2024-09-13 18:41:16"}
+{"level":"info","message":"User 11 is trying to activate","service":"user-service","timestamp":"2024-09-13 18:41:23"}
+{"level":"info","message":"User 11 activated succesfully","service":"user-service","timestamp":"2024-09-13 18:41:23"}
+{"level":"info","message":"Server is running on http://localhost:3000","service":"user-service","timestamp":"2024-09-13 18:42:23"}

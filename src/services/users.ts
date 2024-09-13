@@ -10,7 +10,7 @@ import {
   getStoredToken,
   removeStoredToken,
 } from "@/helpers/emailActivation";
-import { sendEmail } from "@/helpers/emails";
+import { activationEmailContent, sendEmail } from "@/helpers/emails";
 import logger from "@/utils/logger";
 
 export class UserService {
@@ -29,10 +29,11 @@ export class UserService {
       const activationUrl = generateActivationUrl(token);
       await sendEmail({
         to: user.email,
-        subject: "Activate Your Account",
-        text: `Hello  please activate your account by clicking the link: ${activationUrl}`,
+        subject: "Aktivizoni adresen",
+        html: activationEmailContent(activationUrl, userData.name as string),
       });
-      console.log(token,"token")
+
+      logger.info(`User ${user.name} created and received email`);
       res.json(new ApiResponse(true, "User created successfully", user));
     } catch (error) {
       console.log(error);
@@ -143,16 +144,16 @@ export class UserService {
   }
 
   /**
- * Users receive a email where his account it's activated and his password it's updated.
- * @param {Request} req - Express request object
- * @param {Response} res - Express response object
- * @param {string} req.query.token - Activation token
- * @param {UserActivationRequest} req.body - User data for activation
- */
+   * Users receive a email where his account it's activated and his password it's updated.
+   * @param {Request} req - Express request object
+   * @param {Response} res - Express response object
+   * @param {string} req.query.token - Activation token
+   * @param {UserActivationRequest} req.body - User data for activation
+   */
   public async activateUser(req: Request, res: Response) {
     const { token } = req.query;
     const userData: UserActivationRequest = req.body;
-    logger.info(`User ${userData.id} is trying to activate`)
+    logger.info(`User ${userData.id} is trying to activate`);
     try {
       if (!token) {
         return new ApiResponse(false, "Invalid activation link");
@@ -172,10 +173,11 @@ export class UserService {
         .where({ id: decoded.userId })
         .update(userData)
         .returning("*");
-      await removeStoredToken(storedToken);
-      logger.info(`User ${userData.id} activated succesfully`)
-
-      return new ApiResponse(true, "User activated succesfully", activatedUser);
+      await removeStoredToken(storedToken as string);
+      logger.info(`User ${userData.id} activated succesfully`);
+      return res.json(
+        new ApiResponse(true, "User activated successfully", activatedUser),
+      );
     } catch (error) {
       ApiResponse.handleError(res, error);
     }

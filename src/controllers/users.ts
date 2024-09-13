@@ -26,4 +26,7 @@ export class UserController {
   public async login(req: Request, res: Response) {
     await this.userService.loginUser(req, res);
   }
+  public async activateUser(req: Request, res: Response) {
+    await this.userService.activateUser(req, res);
+  }
 }
