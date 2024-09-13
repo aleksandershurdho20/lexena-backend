@@ -185,3 +185,7 @@
 {"level":"info","message":"User 11 is trying to activate","service":"user-service","timestamp":"2024-09-13 18:41:23"}
 {"level":"info","message":"User 11 activated succesfully","service":"user-service","timestamp":"2024-09-13 18:41:23"}
 {"level":"info","message":"Server is running on http://localhost:3000","service":"user-service","timestamp":"2024-09-13 18:42:23"}
+{"level":"info","message":"Server is running on http://localhost:3000","service":"user-service","timestamp":"2024-09-13 18:42:55"}
+{"level":"info","message":"Server is running on http://localhost:3000","service":"user-service","timestamp":"2024-09-13 19:11:22"}
+{"level":"info","message":"Server is running on http://localhost:3000","service":"user-service","timestamp":"2024-09-13 19:12:55"}
+{"level":"info","message":"Server is running on http://localhost:3000","service":"user-service","timestamp":"2024-09-13 19:14:26"}
