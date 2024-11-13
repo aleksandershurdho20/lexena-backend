@@ -3,6 +3,7 @@ import dotenv from "dotenv";
 import express from "express";
 import { readdirSync } from "fs";
 import path from 'path';
+test()
 dotenv.config();
 
 const app = express();
@@ -21,7 +22,9 @@ const routesPath = path.resolve(__dirname, './routes');
     
     app.use('/api', routeModule);
   });
-
+function test() {
+  return "test"
+}
 
 app.listen(port, () => {
   logger.info(`Server is running on http://localhost:${port}`);
