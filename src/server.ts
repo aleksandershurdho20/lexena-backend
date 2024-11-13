@@ -2,7 +2,6 @@ import logger from "@utils/logger";
 import dotenv from "dotenv";
 import express from "express";
 import { readdirSync } from "fs";
-import path from 'path';
 dotenv.config();
 
 const app = express();
